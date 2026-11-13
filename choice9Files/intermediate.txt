@@ -1,0 +1,81 @@
+*********************************************************************************************
+Q. What's OOP (object-oriented-Programming)  in  C++ ?
+
+OOP is a programming paradigm based on objects and classes. It bundles data and functionality
+into objects which interact.
+Key principles include Encapsulation,Inheritance,polymorphisim and absraction, providing a 
+structured approach to software development.
+
+
+*********************************************************************************************
+Q. what's a constructor in C++ ?
+
+A Constructor is a special member function of class that is automatically called when an 
+object.Its purpose is to intialize the objects data and set up the objrct's state.
+Constructors have the same name as the class and do not have a return type, not even void.
+They can be overloaded,allowing multiple constructors with diffirent parameter lists to
+intialize objects in diffirent ways
+
+
+
+
+
+
+
+*** Inheritance is a fundamental concept in OOP (Object Oriented Programming). It is 
+the mechanism by which one class is allowed to inherit the features (fields and methods) 
+of another class. Inheritance means creating new classes based on existing ones. 
+A class that inherits from another class can reuse the methods and fields of that class.
+
+#include <iostream>
+using namespace std;
+
+class Animal
+{
+  public:
+    void sound()
+    {
+        cout << "Animal makes a sound" << endl;
+    }
+};
+
+class Dog : public Animal
+{
+  public:
+    void sound()
+    {
+        cout << "Dog barks" << endl;
+    }
+};
+
+class Cat : public Animal
+{
+  public:
+    void sound()
+    {
+        cout << "Cat meows" << endl;
+    }
+};
+
+class Cow : public Animal
+{
+  public:
+    void sound()
+    {
+        cout << "Cow moos" << endl;
+    }
+};
+
+int main()
+{
+    Dog d;
+    d.sound();
+
+    Cat c;
+    c.sound();
+
+    Cow cow;
+    cow.sound();
+
+    return 0;
+}

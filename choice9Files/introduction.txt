@@ -1,0 +1,81 @@
+ 
+ 
+ 
+ Author: Rachid Raghib
+ 
+*** Computer is a programmable machine designed to follow instructions.
+*** Programs are instructions in the computer memory to make it do somthing.
+
+*** Computer components are:
+    CPU includes control unit and arithmetic & logical unit.
+    Main Memory RAM.
+    Secondary memory and storage.
+    Input/output devices.
+
+*** Program is a set of instructions that the computer follows to perform a task.
+*** Algorithm is a set of steps that well defines how to perform a task.Its purpose is to better
+    perform in representing,limitation,analysis,communication,discovery and execution.
+
+C++ is a versatile and high-performance programming language widely used across various 
+industries. Its efficiency, control over system resources, and support for multiple paradigms 
+make it ideal for developing complex systems. Below is one example of a real-world application 
+of C++ that we use every day:
+
+Operating Systems:
+
+C++ is integral to operating systems like Windows, macOS, and Linux. Its ability to manage 
+hardware resources efficiently makes it essential for system-level programming. Microsoft and 
+Apple use C++ to maintain their flagship OS products.
+
+Why C++ was chosen for operating systems ?
+
+C++ is a powerful programming language that has played a significant role in the development of
+various operating systems. Its combination of high-level abstraction and low-level control 
+makes it an ideal choice for system programming. For instance, popular operating systems like 
+Microsoft Windows and parts of macOS are built using C++. The language's object-oriented 
+features facilitate modularity, enabling developers to create reusable code components, which 
+is essential when maintaining complex operating systems.
+
+Furthermore, C++ offers direct manipulation of hardware resources, which is crucial for 
+performance-critical applications such as operating systems. This allows for efficient memory 
+management and improved speed, making it suitable for tasks that require real-time processing.
+Additionally, C++ supports multi-threading, which is vital for modern operating systems that 
+need to handle multiple processes simultaneously.
+
+C++'s standard library provides a rich set of functions and classes, further simplifying the 
+development of system-level software. Developers can leverage features like templates and 
+exceptions to create robust and maintainable code. Furthermore, the widespread adoption of C++ 
+in operating system development ensures a large community and a wealth of resources, including
+libraries and frameworks, which facilitate ongoing innovation in this field.
+ 
+C++ Vs other programming languages:
+
+C++ is considered unique among programming languages because it combines low-level control 
+(like C) with high-level abstractions (like modern object-oriented languages). This dual nature
+allows developers to write both system-level code and complex applications efficiently.
+Following protocols and utilizing many aspects within the code is what makes C++ stand out.
+
+In short: C++ is unique because it gives you the power of C with the abstractions of modern 
+languages, letting you choose between maximum performance and developer productivity, often 
+in the same program.
+
+Web browser:
+
+Your current web browser is probably programmed in C++. It powers the backend services that 
+retrieve information from databases and translate code into interactive web pages. With C++, 
+browsers can operate at high speed and minimum delay so that it doesn’t take long for content 
+to appear on our screens.
+   
+C++ is used to develop the most popular web browsers we use today like:
+•	Internet Explorer
+•	Google Chrome
+•	Mozilla Firefox
+•	Safari
+•	Netscape Navigator
+•	Opera
+
+C++ remains a cornerstone of modern software development, powering applications ranging from 
+gaming and operating systems to AI and robotics. Its performance, versatility, and control over
+hardware make it indispensable for developers to tackle complex, resource-intensive projects.
+
+

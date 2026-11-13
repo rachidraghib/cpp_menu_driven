@@ -1,0 +1,3 @@
+case 2:readFile("articulate2.txt");
+            break;
+            

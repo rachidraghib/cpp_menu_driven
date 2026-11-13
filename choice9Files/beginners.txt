@@ -1,0 +1,301 @@
+Q. What's C++ and why is it used ?
+
+C++ is statically,typed,compiled,general-purpose programming language that supports 
+procedural,object-oriented,and generic programming features.
+It's wildely used for developing complex systems where hardware manipulation is needed,
+such as operation systems,game engines,and enterprise software.
+*********************************************************************************************
+
+
+Q. What are the differences between C and C++ ?
+
+C is primarly a procedual language focusing on function-based programming.In contrast C++
+supports both procedual and object-orioent programming allowing the use of classes and 
+objects.Additionally,C++ includes featues which are not present in C.
+*********************************************************************************************
+
+
+Q. What are the primitive data types in C++ ?
+
+Primitive data types are built-in or predefined data types and can be used directly by the
+user to declare variables.
+*********************************************************************************************
+
+
+Q. What is the ASCII table ?
+
+The ASCII (American Standard Code for Information Interchage) table is a standard character
+encoding scheme that defines the correspondence between characters and numerical values 
+in the range from 0 to 127.Each character in the ASCII table has corresponding numerical 
+value representing it as byte.
+
+This table standardizes the representation of text in the computer and enables data exchange.
+
+*** Binary codes:
+    Each character has corresponding decimal number in ASCII CODE table. And based on binary 
+    base 2^7-1=2^6=64 bits. 
+    64 32 16 8 4 2 1 
+    we can conclude binary code for any character.
+    EXAMPLES:
+    Letter B its decimal value in ASCII Table is 66
+    66=64+2
+    1 0 0 0 0 1 0
+    Letter u its decimal value in ASCII Code is 117
+    117=64+32+16+4+1
+    1 1 1 0 1 0 1
+ 
+ C++ Program:
+ int number = 42;
+
+    // Prints 'number' as an 8-bit binary string
+    cout << "8-bit:  " << bitset<8>(number) <<endl;
+
+    // Prints 'number' as a 16-bit binary string
+    cout << "16-bit: " <<bitset<16>(number) <<endl;
+ C++ Program:
+   #include <iostream>
+#include <format> // Requires C++20
+
+int main() {
+    int number = 42;
+    // {:b} prints the raw binary representation without leading zeros
+    std::cout << std::format("Standard: {:b}\n", number);
+
+    // {:08b} forces an 8-character width padded with leading zeros
+    std::cout << std::format("Padded:   {:08b}\n", number);
+    return 0;
+} 
+*********************************************************************************************
+
+
+Q. What is the Preprocessor ?
+
+The preprocessor in C++ is a component of the compiler that performs preliminary processing
+of source code before its actual compilation. it executes various tasks such as defining 
+symbolic constants using #define directives,excluding parts of the code using #ifdef,#endif
+derictives,and more.
+
+The preprocessor helps to make the code more scructured,extends its functionality, and 
+provides greater flexibility in managing the software project.
+*********************************************************************************************
+
+
+Q. what are header files in C++ ? /***************
+
+Header files in C++ contain declarations of functions,classes,variables,etc, intended for 
+reuse across multiple source files.
+They are included at the beginning of source files using #include. header files promote 
+modularity,code reuse and organizatiion in large prijects by seperating interface 
+declarations from implemention details
+*********************************************************************************************
+
+
+
+Q. How does #include work in C++ ? 
+
+The #include directive is used to include the contents of another file in the current source 
+file.When encountered,the preprocessor replaces #include line with the contents of the 
+specified file before compilation begins.
+
+
+*********************************************************************************************
+
+Q. How to protect a header file from being included multiple times in C++ ? /********
+
+C++ protects a header from being used multiple times by including guards or #pragma once.
+Include guards involves defining a unique identifier within the header file and using 
+conditional preprocessor directives to include the content that hasn't been defined.
+*********************************************************************************************
+
+Q. How what's a namespace in C++ and why is it used ?
+
+In C++ a namespace is a way to orgnize and encapsulate code to prevent naming conflicts.
+it's declared using the namespace keyword and entitled within it are acceesed using the scope
+resolution operator.
+
+namespace myNameSpace{
+   // code goes here
+}
+myNameSpace::myFunction
+
+namespace improves modularity and readability,escpecially in larger projects or When 
+integrating multiple libraries
+*********************************************************************************************
+
+Q. what's a compiler in C++ ?
+
+A compiler is a software tool that translates source code into machine code or executable 
+code that a computer understands and executes. It performs various tasks such as lexical 
+analysis,syntax analysis,optimization and code gereration.
+
+The compiler ensures that the source code adheres to syntax and the rules of the programming
+language and produces efficient and executable output. 
+
+KEY TASKS WHEN COMPILING
+
+    1.Translations: 
+    converts source code to machine code.
+
+    2.Syntax and semantic analysis:
+    scans the code for errors ensuring it follows language rules and validates types.
+
+    3.Optimization:
+    rearrages or refines the code to improve effeciency and make programs faster and more compact.
+
+    4.Error reporting:
+    identifies errors in the code before deployment
+
+    5.Code generation:
+    produces an executable file 
+
+Creat Source File
+    ---> Run preprocessor to convert source file directives to source code statements
+    ---> Run compiler to convert source program into machine binary code. 
+    ---> Run Linker to connect hardware specific code to machine instructions producing 
+         an executable file.   
+*********************************************************************************************  
+
+
+Q. what's a linker in C++ ?
+
+A linker is a software utility responsible for combining multiple object files generated
+by the compiler into a single executable program or library.
+It resolves references between diffirent modules or object files,ensuring that functions
+and variables defined in one file that can be accessed and utilized by other parts of 
+the program.
+The linker also handles the inclusion of libraries and external dependecies,allowing for 
+the creation of standalone executables or shared libraries that can be executed and utilized
+by other programs.
+*********************************************************************************************
+
+
+Q. what are loops in  C++ ?
+
+Loops in C++ are control structures that allow the repeated execution of a block of code 
+while a specified condition is true or met.
+they enable automating repeatitive tasks and iterating over collection of data. 
+*********************************************************************************************
+
+
+Q. what's the difference between while loop and do-while loop in C++ ?
+
+The diffirence is that while loops are entry-controlled loops, where the condition is checked
+before entering the loop body.
+In contrast, do-while loops are exit-controlled loops,where the condition is ckecked after
+executing the loop body, ensuring that the body is executed at least once.
+*********************************************************************************************
+
+Q. what is an array in  C++ ?
+
+An array is a fixed size collection of elements of the same data type stored in contiguous
+memory location.it allows for  storage and manipulation of multiple values under a single 
+variable name.
+Elements in an array are accessed using an index, which represents thier position whith in
+the array.Arrays in C++ have fixed size determined at compile time,and thier elements can 
+be of any valid data type,such as intgers,characters,or user-defined types
+*********************************************************************************************
+
+Q. what is a string in  C++ ?
+
+A string is a sequence of characters stored as a contiguous block of memory.It represents
+text data and is a fundamental data type in the C++ Stadard Library Strings.
+Strings can be manipulated using various built-in functions and operators,making them
+versatile for text processing tasks.
+
+C++ provides two primary string types: 
+
+strings, which is part of the C++ Stadard Library,and C-style strings,which are arrays 
+of character terminated by by a null character ('\0').
+
+strings provides additional functionality,such as dynamic resizing compared to C-style.
+*********************************************************************************************
+
+
+Q. How does const affect a variable  in  C++ ?
+
+const affects a variable by making it immutable after asigning a value when the variable
+is declared as const. It can not be changed later in the program.
+Attempting to modify the value will result in compilation error.Using const also helps 
+optimize code and ensures safety by guaranteeing that the variable's value remains unchaged 
+during program execution.
+*********************************************************************************************
+Q. How does static  affect global/local variables  in  C++ ?
+
+It does affect global variables by limiting their visibility to the current source file.
+for local variables, static changes their storage duration.
+*********************************************************************************************
+
+Q. What's a pointer in C++ ?
+
+***A pointer in C++ is a variable that stores the memory address of another variable rather
+than storing a direct value.
+Instead of holding data like an interger or a string,it holds numeric address that points to
+where data lives in the system memory.
+
+*****BASIC SYNTAX AND OPERARIONS*****
+
+Working with raw pointers requires understanding two primary operators:
+--->The address of operator(&). It retrieves the memory address of an existing variable
+--->The dereference operator (*). This operator accesses or modifies the value stored in the 
+memory address the pointer holds.
+
+ *****PRIMARY USE OF POINTERS*****
+ 
+1.Dynamic Memory Allocation
+Pointers allow you to allocate memory on the during runtime using the (new) operator.this is 
+essential when the size of data (like an array) is unknownat compile time.
+
+2.Building Dynamic Data Structures
+Complex and sizable data structrures depends on pointers to link data segments together 
+in memory.
+
+Linked list: Every node contains a pointer to the next node.
+Trees and Graphs: Nodes use pointers to reference their child or neighbor nodes.
+
+3.Effecient Data Passing(pass-by-pointer)
+Passing large structures or objects to a function by value duplicates the data,which wastes
+memory and processing time.Passing a pointer copies only fixed size nenory addrees (typically
+4 or 8 bytes),while granting the function direct access to modify the original variable.
+
+4.Runtime Polymorphism(Object-oriented Programming)
+Pointers are required to achieve subtype polymorphism in C++. A base class pointer can pointer
+to a derived class object,allowing the program to call overriden virtual methods at runtime.
+*********************************************************************************************
+
+Q. what's a function  in  C++ ?
+
+A function is a named block of code that performs a specific task. Functions are reusable 
+and modular,allowing you to break down complex tasks into smaller,more manageable parts.
+They typically accepts parameters,performs some operations and optionally return a result.
+ 
+
+***Function Pointer as Arguments (Callbacks) One of the most useful applications of function 
+pointers is passing functions as arguments to other functions.
+This allows you to specify which function to call at runtime.
+
+#include <iostream>
+using namespace std;
+// A simple addition function
+int add(int a, int b) {
+    return a + b;
+}
+
+// A simple subtraction function
+int subtract(int a, int b) {
+    return a - b;
+}
+
+void calc(int a, int b, int (*op)(int, int)) {
+    cout<<op(a, b)<<endl;
+}
+
+int main() {
+  
+    // Passing different 
+    // functions to 'calc'
+    calc(10, 5, add);
+  	calc(10, 5, subtract);
+    return 0;
+}  
+*********************************************************************************************
+
